@@ -35,4 +35,5 @@ Copyright ©️ [SANDEEPA](https://telegram.me/SANDEEPA_PATTHARI)
 
 ### Copyright ©️ [SANDEEPA PATTHARIA](https://youtube.com/@SANDEEPA.PATTHARIA)
 
-<b>Selling This Repo Or Code Of This Repo For Money Is Strictly Prohibited 🚫</b>
+<b><h6> जय श्री राम 🙏
+जय श्री श्याम 🌹 </h6></b>
