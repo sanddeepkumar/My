@@ -32,8 +32,7 @@ Copyright ©️ [SANDEEPA](https://telegram.me/SANDEEPA_PATTHARI)
 </b>
 </details>
 
-
-### Copyright ©️ [SANDEEPA PATTHARIA](https://youtube.com/@SANDEEPA.PATTHARIA)
+### ॐॐॐॐ [SANDEEPA PATTHARIA](https://youtube.com/@SANDEEPA.PATTHARIA)
 
 <b><h3> जय श्री राम 🙏
 जय श्री श्याम 🌹 </h3></b>
