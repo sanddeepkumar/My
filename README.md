@@ -1,21 +1,21 @@
 <p align="center">
-  <img src="https://graph.org/file/d57d6f83abb6b8d0efb02.jpg" alt="VJ-TXT-LEECH-BOT Logo">
+  <img src="https://i1.sndcdn.com/avatars-000583046589-asicj6-t500x500.jpg" alt="saminki Logo">
 </p>
 <h1 align="center">
-  VJ TXT LEECH BOT
+  SANDEEPA PATTHARIA 
 </h1>
 
-## Deploy Tutorial - [Video Link](https://youtu.be/l1u3C_F79QE)
+## Deploy Tutorial - [Video Link](https://youtube.com/c/sandeeppatharia)
 
 ## Credit
 
 <b><details><summary>Tap On Me For See Credit</summary>
 
-💝 Credit Goes To [Tech VJ](https://telegram.me/Kingvj01) So Don't Forgot To Give Credit
+🕉 Credit Goes To [SANDEEPA](https://telegram.me/SANDEEPA_PATTHARIA) So Don't Forgot To Give Credit 🕉
 
-💖 And Thank You So Much To All Who Help In This Journey 💕
+🕉 And Thank You So Much To All Who Help In This Journey 🕉
 
-Copyright ©️ [Tech VJ](https://telegram.me/Kingvj01)
+Copyright ©️ [SANDEEPA](https://telegram.me/SANDEEPA_PATTHARI)
 
 </b>
 </details>
@@ -24,16 +24,15 @@ Copyright ©️ [Tech VJ](https://telegram.me/Kingvj01)
 
 <b><details><summary>Tap On Me For See Details Of Owner</summary>
 
-- YouTube Channel : [Tech VJ](https://youtube.com/@Tech_VJ)
-- Telegram Channel : [VJ Botz](https://telegram.me/VJ_Botz)
-- Contact Link : [King VJ](https://telegram.me/Kingvj01)
-- Instagram Id Link : [Tech VJ](https://instagram.com/tech.vj)
+- YouTube Channel : [SAM](https://youtube.com/@sandeepapattharia)
+- Telegram Channel : [SAM](https://telegram.me/SANDEEPA_PATTHARIA)
+- Contact Link : [SAM](https://telegram.me/SANDEEPA_PATTHARIA)
+- Instagram Id Link : [SAM](https://instagram.com/sandeepapattharia)
 
 </b>
 </details>
 
 
-### Copyright ©️ [Tech VJ](https://youtube.com/@Tech_VJ)
+### Copyright ©️ [SANDEEPA PATTHARIA](https://youtube.com/@SANDEEPA.PATTHARIA)
 
 <b>Selling This Repo Or Code Of This Repo For Money Is Strictly Prohibited 🚫</b>
-
