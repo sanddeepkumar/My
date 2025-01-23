@@ -10,6 +10,7 @@ import time
 import asyncio
 import requests
 import subprocess
+import yt_dlp
 
 import core as helper
 from utils import progress_bar
@@ -158,6 +159,31 @@ async def upload(bot: Client, m: Message):
                 ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]"
             else:
                 ytf = f"b[height<={raw_text2}]/bv[height<={raw_text2}]+ba/b/bv+ba"
+            if def download_video(url):
+    ydl_opts = {
+        'outtmpl': '%(title)s.%(ext)s',
+        'continuedl': True,
+        'quiet': True,
+        'no_warnings': True,
+    }
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        ydl.download([url])
+
+def is_youtube_url(url):
+    youtube_regex = re.compile(
+        r'(https?://)?(www\.)?'
+        '(youtube|youtu|youtube-nocookie)\.(com|be)/'
+        '(watch\?v=|embed/|v/|.+\?v=)?([^&=%\?]{11})')
+    return youtube_regex.match(url) is not None
+
+def handle_message(update, context):
+    url = update.message.text
+    if is_youtube_url(url):
+        update.message.reply_text('Downloading video... Please wait.')
+        download_video(url)
+        update.message.reply_text('Download complete!')
+    else:
+        update.message.reply_text('Invalid YouTube URL. Please try again with a valid link.')
 
             if "jw-prod" in url:
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
