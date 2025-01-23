@@ -159,13 +159,7 @@ async def upload(bot: Client, m: Message):
                 ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]"
             else:
                 ytf = f"b[height<={raw_text2}]/bv[height<={raw_text2}]+ba/b/bv+ba"
- if is_youtube_url(url):
-        update.message.reply_text('Downloading video... Please wait.')
-        download_video(url)
-        update.message.reply_text('Download complete!')
- else:
-        update.message.reply_text('Invalid YouTube URL. Please try again with a valid link.')
-
+ 
             if "jw-prod" in url:
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
             else:
