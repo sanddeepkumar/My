@@ -115,12 +115,10 @@ async def upload(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     highlighter = f"️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'D':
-        MR = 'sam'
+    if raw_text3 == 'sam':
+        MR = highlighter
     elif raw_text3:
         MR = raw_text3
-    else:
-        MR = highlighter
    
     await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
