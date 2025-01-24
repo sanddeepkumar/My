@@ -70,18 +70,10 @@ async def upload(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
 
- #   await editable.edit("**Now Please Send Me Your Batch Name**")
- #   input1: Message = await bot.listen(editable.chat.id)
- #   raw_text0 = input1.text
- #   await input1.delete(True)
-    await editable.edit("**Enter Batch Name or send 1 for grabing from text filename.**")
+    await editable.edit("**Now Please Send Me Your Batch Name**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '1':
-        b_name = file_name
-    else:
-        b_name = raw_text0
 
 
 
@@ -171,11 +163,9 @@ async def upload(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} ⎳𝓸𝓿𝓮❥❤️━━╬٨ﮩSAMINKI٨ـﮩـ❥.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {MR}**'
-                cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} 𝄟DEEPAK𝄟.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {MR}**'
-                
-                #cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.**sam.mkv\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**🔖 Batch Name:</code></pre>\n\n📥 Extracted By : {𝗻𝗮𝗺𝗲𝟭}{MR}**'
-                #cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}.**deep.pdf \n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**🔖 Batch Name:</code></pre>\n\n📥 Extracted By : {𝗻𝗮𝗺𝗲𝟭}{MR}**'
+                                
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.**sam.mkv\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**🔖 Batch Name:</code></pre>\n\n📥 Extracted By : {𝗻𝗮𝗺𝗲𝟭}{MR}**'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}.**deep.pdf \n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**🔖 Batch Name:</code></pre>\n\n📥 Extracted By : {𝗻𝗮𝗺𝗲𝟭}{MR}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
