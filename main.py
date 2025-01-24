@@ -83,7 +83,7 @@ async def upload(bot: Client, m: Message):
     if raw_text == 'd':
         b_name = file_name
     else:
-        b_name = raw_text0
+        b_name = raw_text1
     
 
     await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
