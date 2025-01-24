@@ -1,7 +1,3 @@
-# Don't Remove Credit Tg - @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot https://youtube.com/@Tech_VJ
-# Ask Doubt on telegram @KingVJ01
-
 import os
 import re
 import sys
@@ -10,7 +6,6 @@ import time
 import asyncio
 import requests
 import subprocess
-import yt_dlp
 
 import core as helper
 from utils import progress_bar
@@ -41,7 +36,7 @@ async def start(bot: Client, m: Message):
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
-    await m.reply_text("**भर गया दिल**😡", True)
+    await m.reply_text("**बस भर गया दिल**😡", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -75,15 +70,10 @@ async def upload(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
 
-    
-    await editable.edit("**Enter Batch Name or send 1 for grabing from text filename.**")
+    await editable.edit("**Now Please Send Me Your Batch Name**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
-    if raw_text0 == '1':
-        b_name = file_name
-    else:
-        b_name = raw_text0
     
 
     await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
@@ -110,7 +100,7 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Caption or you name to add caption on your uploaded file**")
+    await editable.edit("Now Enter A Caption to add caption on your uploaded file")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -164,18 +154,17 @@ async def upload(bot: Client, m: Message):
                 ytf = f"b[height<={raw_text2}][ext=mp4]/bv[height<={raw_text2}][ext=mp4]+ba[ext=m4a]/b[ext=mp4]"
             else:
                 ytf = f"b[height<={raw_text2}]/bv[height<={raw_text2}]+ba/b/bv+ba"
- 
+
             if "jw-prod" in url:
                 cmd = f'yt-dlp -o "{name}.mp4" "{url}"'
             else:
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-
-                cc = f'**[📽️] Video_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}sam.mkv\n🔖 Batch Name: {raw_text0}</code></pre>\n\n📥 Extracted By : {MR}**'
-                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}deep.pdf \n*🔖 Batch Name: {raw_text0}</code></pre>\n\n📥 Extracted By : {MR}**'
                 
-                 if "drive" in url:
+                cc = f'**[📽️] Vid_ID:** {str(count).zfill(3)}.** {𝗻𝗮𝗺𝗲𝟭}{MR}.mkv\n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
+                cc1 = f'**[📁] Pdf_ID:** {str(count).zfill(3)}. {𝗻𝗮𝗺𝗲𝟭}{MR}.pdf \n**𝔹ᴀᴛᴄʜ** » **{raw_text0}**'
+                if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
@@ -217,7 +206,7 @@ async def upload(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**𝔻ᴏɴᴇ 𝔹ᴏ𝕤𝕤😎**")
+    await m.reply_text(" थक गया रे मैं तो 🥵")
 
 
 bot.run()
