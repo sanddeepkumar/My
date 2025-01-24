@@ -111,17 +111,9 @@ async def upload(bot: Client, m: Message):
     
 
     await editable.edit("**Enter Your Name or send D for use default**")
-
-    # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
-
-    # Get the raw text from the user's message
     raw_text3 = input3.text
-
-    # Delete the user's message after reading it
     await input3.delete(True)
-
-    # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
     if raw_text3 == 'D':
         MR = '@Skpattharia'
