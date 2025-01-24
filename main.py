@@ -124,11 +124,11 @@ async def upload(bot: Client, m: Message):
     # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
     if raw_text3 == 'D':
-        CR = '@Skpattharia'
+        MR = '@Skpattharia'
     elif raw_text3:
-        CR = raw_text3
+        MR = raw_text3
     else:
-        CR = credit
+        MR = credit
    
     await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
