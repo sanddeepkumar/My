@@ -110,7 +110,7 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter Your Name or send `de` for use default**")
+    await editable.edit("**Enter Your Name or send D for use default**")
 
     # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
@@ -123,7 +123,7 @@ async def upload(bot: Client, m: Message):
 
     # Default credit message
     credit = "️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'de':
+    if raw_text3 == 'D':
         CR = '@Skpattharia'
     elif raw_text3:
         CR = raw_text3
