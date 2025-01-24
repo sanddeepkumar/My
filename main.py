@@ -75,14 +75,15 @@ async def upload(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Enter Batch Name or send d for grabing from text filename.**")
-    input1: Message = await bot.listen(editable.chat.id)
-    raw_text0 = input1.text
-    await input1.delete(True)
-    if raw_text0 == 'd':
-        b_name = file_name
+    await editable.edit("*Enter Your Name or send `d` for use default**")
+    input3: Message = await bot.listen(editable.chat.id)
+    raw_text3 = input3.text
+    await input3.delete(True)
+    highlighter  = f"️ ⁪⁬⁮⁮⁮"
+    if raw_text3 == 'd':
+        MR = highlighter 
     else:
-        b_name = raw_text0
+        MR = raw_text3
     
 
     await editable.edit("**𝔼ɴᴛᴇʀ ʀᴇ𝕤ᴏʟᴜᴛɪᴏɴ📸**\n144,240,360,480,720,1080 please choose quality")
