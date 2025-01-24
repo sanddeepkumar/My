@@ -78,9 +78,9 @@ async def upload(bot: Client, m: Message):
     
     await editable.edit("**Enter Batch Name or send d for grabing from text filename.**")
     input1: Message = await bot.listen(editable.chat.id)
-    raw_text0 = input1.text
+    raw_text = input1.text
     await input1.delete(True)
-    if raw_text0 == 'd':
+    if raw_text == 'd':
         b_name = file_name
     else:
         b_name = raw_text0
