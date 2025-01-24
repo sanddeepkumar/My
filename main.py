@@ -117,7 +117,7 @@ async def upload(bot: Client, m: Message):
     highlighter = f"️ ⁪⁬⁮⁮⁮"
     if raw_text3 == 'sam':
         MR = highlighter
-    elif raw_text3:
+    elif 
         MR = raw_text3
    
     await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
