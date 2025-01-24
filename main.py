@@ -185,7 +185,7 @@ async def upload(bot: Client, m: Message):
                 cc = f'**🎥 VIDEO ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} {res} SAM.mkv\n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {MR}**'
                 cc1 = f'**📁 FILE ID: {str(count).zfill(3)}.\n\n📄 Title: {name1} DEEP.pdf \n\n<pre><code>🔖 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {MR}**'
 
-             if "drive" in url:
+                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
