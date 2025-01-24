@@ -75,7 +75,7 @@ async def upload(bot: Client, m: Message):
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("*Enter Your Name or send `d` for use default**")
+    await editable.edit("*Enter Your Name or send d for use default**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
