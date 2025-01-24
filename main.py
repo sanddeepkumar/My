@@ -109,15 +109,25 @@ async def upload(bot: Client, m: Message):
     
     
 
-    await editable.edit("Now Enter A Caption to add caption on your uploaded file")
+    await editable.edit("**Enter Your Name or send `de` for use default**")
+
+    # Listen for the user's response
     input3: Message = await bot.listen(editable.chat.id)
+
+    # Get the raw text from the user's message
     raw_text3 = input3.text
+
+    # Delete the user's message after reading it
     await input3.delete(True)
-    highlighter  = f"️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'Robin':
-        MR = highlighter 
+
+    # Default credit message
+    credit = "️ ⁪⁬⁮⁮⁮"
+    if raw_text3 == 'de':
+        CR = '@Skpattharia'
+    elif raw_text3:
+        CR = raw_text3
     else:
-        MR = raw_text3
+        CR = credit
    
     await editable.edit("Now send the Thumb url/nEg » https://graph.org/file/ce1723991756e48c35aa1.jpg \n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
